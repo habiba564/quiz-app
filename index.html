@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='style.css'>
+    <script src="https://kit.fontawesome.com/d00baaaeb3.js"></script>
+</head>
+<body>
+    <div class="container" id="start-container">
+        <h1>Quiz App</h1>
+        <label for="name" id="Name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Name">
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div class="container" id="quiz-container">
+        <div id="feedback"></div>
+        <h2 id="question"></h2>
+        <div id="options"></div>
+
+    </div>
+    
+    <div class="container" id="result-container">
+        <h2 id="complete">Quiz Completed!</h2>
+        <p id="user-name"></p>
+        <p id="user-score"></p>
+        <button id="Dashboard " onclick="showHistory()">Dashboard</button>
+        <button id="again" onclick="playAgain()">Play Again</button>
+
+    </div>
+    
+    <div class="container" id="history-container">
+        <h2 id="player-history">Player History</h2>
+        <ul id="history-list"></ul>
+
+    </div>
+    <script src='js.js'></script>
+</body>
+</html>
